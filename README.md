@@ -13,7 +13,6 @@ This application allows you to see the weather of different cities. It consumes 
 - Android
 - Volley
 - Gson
-- Coroutines
 - RecyclerView
 - API: openweathermap
 
