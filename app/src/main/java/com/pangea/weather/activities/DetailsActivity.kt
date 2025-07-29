@@ -1,6 +1,5 @@
 package com.pangea.weather.activities
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
@@ -38,12 +37,17 @@ class DetailsActivity : AppCompatActivity() {
         tvGrade = findViewById(R.id.tvGrade)
         tvStatus = findViewById(R.id.tvStatus)
 
-        val city = intent.getStringExtra("com.pangea.weather.CITY")
+        val cityId = intent.getStringExtra("com.pangea.weather.CITY")
+        if (cityId.isNullOrEmpty()) {
+            Toast.makeText(this, "ID de ciudad no válido", Toast.LENGTH_LONG).show()
+            finish()
+            return
+        }
 
         if (Network.hayRed(this)){
             //Ejecutar solicitud http
-            solicitudHttpVolley(
-                "https://api.openweathermap.org/data/2.5/weather?id=$city&appid=fe470636a5a4d7d5b221d8e8810429a8&units=metric&lang=es"
+            getWeatherWithVolley(
+                "https://api.openweathermap.org/data/2.5/weather?id=$cityId&appid=fe470636a5a4d7d5b221d8e8810429a8&units=metric&lang=es"
             )
         }else{
             //Mostrar un mensaje de error
@@ -53,7 +57,7 @@ class DetailsActivity : AppCompatActivity() {
     }
 
     //Solicitud http con volley y gson
-    private fun solicitudHttpVolley(url: String) {
+    private fun  getWeatherWithVolley(url: String) {
         try {
             val queue = Volley.newRequestQueue(this)
             val solicitud = StringRequest(
