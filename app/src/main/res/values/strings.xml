@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">weather</string>
+    <string name="grade">0&#176;C</string>
+    <string name="city">Republica Dominicana</string>
+    <string name="status">Soleado</string>
+
+    <string name="welcome">Bienvenido a mi app del clima, selecciona una opcion</string>
+    <string name="btnRD">Clima de la Republica Dominicana</string>
+    <string name="btnMexico">Clima de la ciudad de Mexico</string>
+    <string name="btnBerlin">Clima de la ciudad de Berlin</string>
+    <string name="name">Name</string>
+    <string name="clima">Clima</string>
+
+</resources>

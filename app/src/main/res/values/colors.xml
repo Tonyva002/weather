@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#eb0b24</color>
+    <color name="colorPrimaryLigth">#da5c6d</color>
+    <color name="colorPrimaryDark">#cf1531</color>
+    <color name="colorPrimaryMoreLight">#f8a8b4</color>
+    <color name="colorAccent">#fac72d</color>
+    <color name="colorAccentLight">#FAF3DA</color>
+    <color name="colorAccentDark">#FFC107</color>
+    <color name="colorSecondary">#fac72d</color>
+    <color name="colorSecondaryLight">#FAF3DA</color>
+    <color name="colorSecondaryDark">#FFC107</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="accent">#eb0b24</color>
+
+    <color name="colorMenuItem">#FFFFFF</color>
+    <color name="gris">#A4A4A4</color>
+    <color name="gris_claro">#F0F0F0</color>
+    <color name="gris_claro2">#C8C9CB</color>
+    <color name="gris_oscuro">#828482</color>
+
+    <color name="color_city">#EBEBEB</color>
+    <color name="color_status">#F4C8C8</color>
+
+
+    <color name="C0_COLOR">#00ADEE</color>
+    <color name="V0_COLOR">#9431D9</color>
+    <color name="GREEN_COLOR">#8DC63F</color>
+    <color name="rojo_claro">#F78181</color>
+</resources>
